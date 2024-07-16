@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body
+{
+    display: block;
+    justify-content: center;
+
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+ul{
+    list-style-type:none;
+    display: inline-flex;
+    gap: 10px;
+}
+li{
+    justify-content: space-around;
+    padding-right: 100px;
+    cursor: pointer;
+    
+}
+button
+{
+    border-radius: 100px;
+    width: 100px;
+    height: 40px;
+    border-style: none;
+    background-color: rgb(7, 218, 229);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.button_hover
+{
+    position: relative;
+    transition: all 0.3s 0.1s;
+}
+.button_hover:hover
+{
+    opacity: 150%;
+    cursor: pointer;
+    /* font-size: 100%;  */
+    background-color: rgb(8, 195, 205);
+    width: 105px;
+    height: 45px;
+    transform: translate(-100px,-100px,-100px);
+}
+.nav
+{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    /* opacity: 100%; */
+    /* background-color: white; */
+    backdrop-filter: blur(40px);
+}
+
+main{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top: 250px;
+    flex-direction: column;
+}
+
+.gradiant_square
+{
+    background: hsla(239, 100%, 67%, 1);
+
+    background: linear-gradient(145deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", endColorstr="#C6F8FF", GradientType=1 );
+
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50px;
+    /* animation: box_animation 3s 0.3s ease;
+    transform: rotate(0); */
+
+}
+.gradiant_square:hover
+{
+    animation: box_animation 3s 0.3s infinite;
+    transform: rotate(0);
+}
+@keyframes box_animation {
+    to{
+        transform: rotate(-0.5turn);
+    }
+}
+
+span
+{
+    color:rgb(7, 218, 229) ;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    align-items: center;
+    margin: 0px;
+  }
+  p{
+    font-family: "Roboto", sans-serif;
+    width: 500px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+  footer
+  {
+    display: flex;
+    justify-content: center;
+
+  }
+/* .container
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    grid-template-columns: repeat(5,50px);
+    grid-template-rows: repeat(5,50px);
+} */
+
+/* .item
+{
+    border-color: red;
+    border-style: solid;
+}
+.item-2
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item-3
+{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.item-4
+{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+.item-5
+{
+    grid-column: 5/-1;
+    grid-row: 5/-1;
+} */
